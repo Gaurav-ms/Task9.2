@@ -1,0 +1,154 @@
+<html>
+<head>
+<style>
+:root{
+  
+  --left-color: #d3d3d3 ;
+  
+  --right-color:  #02aab0;
+}
+body, html{
+  text-align: center;
+  align-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.5px;
+  background-color: 7FFF00;
+  color: black;
+}
+.container{
+  width: 25%;
+  height: 70%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 10px 40px rgba(22,20,19,0.4);
+  padding: 10 10;
+  margin: 50px;
+  float:left;
+}
+
+input[type=text], select {
+  width: 75%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 2px solid var(--left-color);
+}
+input[type=submit] {
+  width: 25%;
+  background-color:FF1493;
+  color: white;
+  font-size:  px;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin: 8px 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+input[type=submit]:hover {
+  background-color: black;
+}
+textarea{
+  width: 70%;
+  height: 20%;
+}
+hr{
+border: 1px solid var(--left-color);
+background-color: var(--left-color);
+}
+h1{
+text-shadow: 2px 2px 2px rgba(22,20,19,0.4);
+}
+</style>
+</head>
+<body>
+<div class="docker" id="docker">
+   <h1> Docker </h1>
+                                        <h1>Checks the docker version</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number (as docker-1)</label><br>
+                                        <input type="text" name="a" value="docker-1"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Launching a container</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a" value="docker-2"><br><br>
+                                        <label for="option">Type Name of container</label><br>
+                                        <input type="text" name="x"><br><br>
+                                        <label for="option">Type the Name of image</label><br>
+                                        <input type="text" name="y"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Pull image from dockerhub</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a"><br><br>
+                                        <label for="option">Type name of image</label><br>
+                                        <input type="text" name="x"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>List running docker containers</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number </label><br>
+                                        <input type="text" name="a" value="docker-4"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>List all docker containers</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a" value="docker-5"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>List all images present in system</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a" value="docker-6"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Starting a docker container</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a"><br><br>
+                                        <label for="option">Type name of container</label><br>
+                                        <input type="text" name="x"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Stopping a docker container</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a"><br><br>
+                                        <label for="option">Type name of container</label><br>
+                                        <input type="text" name="x"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Deleting a docker container</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a"><br><br>
+                                        <label for="option">Type name of container</label><br>
+                                        <input type="text" name="x"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Stop all docker containers</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a" value="docker-10"><br><br>
+                                        <input type="submit" name="null">
+                                        </form></br></br></br></br></br></br></br></br></br>
+                <h1>Delete all docker containers</h1>
+                                        <form action="http://192.168.43.100/cgi-bin/Task9.py" method='POST' target='_blank'>
+                                        <label for="option">Type the option number</label><br>
+                                        <input type="text" name="a" value="docker-11"><br><br>
+                                        <input type="submit" name="null">
+                                         </form>
+
+                        </div>
+                        </body>
+                        </html>
